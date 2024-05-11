@@ -1,13 +1,17 @@
-import {useEffect } from 'react';
+import React, {useEffect } from 'react';
 import  {useTelegram}  from './hooks/useTelegram';
 
 import Header from './components/header/Header';
 
+import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
+import ProductList from './components/productList/ProductList';
+import Form from './components/form/Form';
 
 function App() {
 
-  const {tg, onToggelButton} = useTelegram();
+  const {tg} = useTelegram();
 
   useEffect( () => {
     tg.ready();
@@ -17,7 +21,10 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <button onClick={onToggelButton}>toggle</button>
+      <Routes>
+        <Route index element={<ProductList/>}/>
+        <Route path={'form'} element={<Form/>}/>
+      </Routes>
     </div>
   );
 };
