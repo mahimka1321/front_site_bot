@@ -1,6 +1,8 @@
 import React from 'react';
-import './Header.css';
 import Button from '../button/Button';
+
+import './Header.css';
+
 import { useTelegram } from '../../hooks/useTelegram';
 
 
@@ -16,6 +18,6 @@ const Header = () => {
         </span>
     </div>
   );
-}
+};
 
 export default Header;
