@@ -1,7 +1,7 @@
 import {useEffect } from 'react';
 import  {useTelegram}  from './hooks/useTelegram';
 
-import Header from './components/header/Header';
+// import Header from './components/header/Header';
 
 import './App.css';
 
@@ -13,9 +13,10 @@ function App() {
     tg.ready();
   }, [tg])
 
+
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/> */}
       <button onClick={onToggelButton}>toggle</button>
     </div>
   );
