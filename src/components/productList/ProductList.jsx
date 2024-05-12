@@ -33,10 +33,10 @@ const ProductList = () => {
     setAddedItems(newItems);
 
     if(newItems.length === 0) {
-      tg.MainButtom.hide();
+      tg.MainButton.hide();
     } else {
-      tg.MainButtom.show();
-      tg.MainButtom.setParams({
+      tg.MainButton.show();
+      tg.MainButton.setParams({
         text: `Купить ${getTotalPrice(newItems)}`
       })
     }
