@@ -27,10 +27,8 @@ const ProductList = () => {
 
     if(alreadyAdded) {
       newItems = addedItems.filter(item => item.id !== product.id);
-      setBntText('Удалить')
     } else {
       newItems = [...addedItems, product];
-      setBntText('Удалить')
     }
 
     setAddedItems(newItems);
@@ -52,7 +50,6 @@ const ProductList = () => {
           product={item}
           onAdd={onAdd}
           className={'item'}
-          setBntText={setBntText}
           btnText={btnText}
           />
       ))}
