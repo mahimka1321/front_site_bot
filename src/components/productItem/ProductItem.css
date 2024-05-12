@@ -3,25 +3,47 @@
     display: flex;
     flex-direction: column;
     border: 1px solid var(--tg-theme-button-color);
-    padding: 15px;
+    padding-bottom: 15px;
     width: 170px;
+    /*background: #a5a5a5;*/
+    border-radius: 15px;
 }
 
 .img
 {
     width: 100%;
     background: lightgray;
-    height: 100px;
+    height: 155px;
     margin: 0 auto;
     background: var(--tg-theme-button-color);
+    /*background: #232323;*/
+    border-radius: 15px;
 }
 
 .description
 {
     font-size: 0.8em;
+
+    margin-left: 15px;
+    margin-top: -10px;
+    
+}
+
+.title
+{
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.price
+{
+    margin-left: 15px;
 }
 
 .add-btn
 {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10px;
 }
