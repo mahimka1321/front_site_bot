@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ProductItem.css';
 
-import Button from '../button/Button';
+
 
 
 const ProductItem = ({product, className, onAdd}) => {
@@ -19,9 +19,9 @@ const ProductItem = ({product, className, onAdd}) => {
         <div className={'price'}>
             <span>Стоимость: <b>{product.price}</b></span>
         </div>
-        <Button className={'add-btn'} onClick={onAddHandler}>
+        <button className={'add-btn'} onClick={onAddHandler}>
             Добавить в корзину
-        </Button>
+        </button>
     </div>
   );
 };
