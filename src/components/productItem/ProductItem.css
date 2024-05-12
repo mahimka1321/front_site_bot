@@ -20,10 +20,12 @@
 .description
 {
     font-size: 0.8em;  
+    color: var(--tg-theme-button-text-color);
 }
 
 .title
 {
+    color: var(--tg-theme-button-text-color);
 }
 
 .price
@@ -31,6 +33,7 @@
 
     font-size: 1em;
     font-weight: 500;
+    color: var(--tg-theme-button-text-color);
 }
 
 .add-btn
