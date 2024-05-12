@@ -5,7 +5,7 @@
     color: var(--tg-theme-button-text-color);
     font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: none;
     cursor: pointer;
 }
