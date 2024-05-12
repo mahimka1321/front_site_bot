@@ -5,7 +5,7 @@ import './ProductItem.css';
 import Button from '../button/Button';
 
 
-const ProductItem = ({product, className, onAdd}) => {
+const ProductItem = ({product, className, onAdd, btnText}) => {
 
     const onAddHandler = () => {
         onAdd(product)
@@ -20,7 +20,7 @@ const ProductItem = ({product, className, onAdd}) => {
             <span>Стоимость: <b>{product.price}</b></span>
         </div>
         <Button className={'add-btn'} onClick={onAddHandler}>
-            Добавить в корзину
+            {btnText}
         </Button>
     </div>
   );

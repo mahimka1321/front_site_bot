@@ -20,14 +20,17 @@ const ProductList = () => {
 
   const [addedItems, setAddedItems] = useState([]);
   const {tg} = useTelegram();
+  const [btnText, setBntText] = useState('Добавить в корзину')
   const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.id === product.id);
     let newItems = [];
 
     if(alreadyAdded) {
       newItems = addedItems.filter(item => item.id !== product.id);
+      setBntText('Удалить')
     } else {
       newItems = [...addedItems, product];
+      setBntText('Удалить')
     }
 
     setAddedItems(newItems);
@@ -49,6 +52,8 @@ const ProductList = () => {
           product={item}
           onAdd={onAdd}
           className={'item'}
+          setBntText={setBntText}
+          btnText={btnText}
           />
       ))}
     </div>
