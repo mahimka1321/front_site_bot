@@ -17,7 +17,7 @@ const Form = () => {
             subject
         }
         tg.sendData(JSON.stringify(data));
-    },[])
+    },[tg, country, street, subject])
 
     useEffect(()=>{
         tg.onEvent('mainButtonClicked', onSendData)
@@ -25,7 +25,7 @@ const Form = () => {
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-    },[])
+    },[tg, onSendData])
     
     useEffect(()=>{
         tg.MainButton.setParams({
