@@ -7,6 +7,9 @@ const products = [
   {id: '1', title: 'Джинцы', price: 4999, description: 'Синего цвета'},
   {id: '2', title: 'Джинцы', price: 2499, description: 'Черного цвета'},
   {id: '3', title: 'Джинцы', price: 5299, description: 'Зеленого цвета'},
+  {id: '4', title: 'Джинцы', price: 4999, description: 'Синего цвета'},
+  {id: '5', title: 'Джинцы', price: 2499, description: 'Черного цвета'},
+  {id: '6', title: 'Джинцы', price: 5299, description: 'Зеленого цвета'}
 
 ]
 
