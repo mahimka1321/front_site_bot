@@ -14,7 +14,7 @@ const Form = () => {
         tg.MainButton.setParams({
             test : 'Отправить данные'
         })
-    },[tg])
+    },[])
 
     useEffect(() => {
         if(!street || !country ) {
@@ -22,7 +22,7 @@ const Form = () => {
         } else {
             tg.MainButton.show();
         }
-    },[tg, country, street])
+    },[country, street])
 
 
     const onChangeCountry = (e) => {
