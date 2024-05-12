@@ -19,16 +19,11 @@
 
 .description
 {
-    font-size: 0.8em;
-
-    margin-left: 15px;
-    
+    font-size: 0.8em;  
 }
 
 .title
 {
-    margin-left: 15px;
-
 }
 
 .price
@@ -36,8 +31,6 @@
 
     font-size: 1em;
     font-weight: 500;
-
-    margin-left: 15px;
 }
 
 .add-btn
