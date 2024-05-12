@@ -21,6 +21,7 @@ const ProductList = () => {
   const [addedItems, setAddedItems] = useState([]);
   const {tg} = useTelegram();
   const [btnText, setBntText] = useState('Добавить в корзину')
+
   const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.id === product.id);
     let newItems = [];
@@ -51,6 +52,7 @@ const ProductList = () => {
           onAdd={onAdd}
           className={'item'}
           btnText={btnText}
+          setBntText={setBntText}
           />
       ))}
     </div>
