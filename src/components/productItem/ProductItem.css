@@ -36,7 +36,7 @@
 .description
 {
     font-size: 0.8em;  
-    color: var(--tg-theme-button-text-color), 50%;
+    color: var(--tg-theme-button-text-color);
 }
 
 
@@ -72,10 +72,11 @@
 .__info_shops_item
 {
     font-size: 14px;
-    color: var(--tg-theme-button-text-color), 50%;
+    color: var(--tg-theme-button-text-color);
 }
 
 .__info_shops_item > samp
 {
     font-size: 24px;
+    color: var(--tg-theme-button-text-color);
 }
