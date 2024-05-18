@@ -11,9 +11,11 @@ const ProductItem = ({product, className, onAdd, btnText}) => {
         onAdd(product)
     }
 
+
+
   return (
     <div className={'product ' + className}>
-        <div className={'img'}/>
+        <img className={'img'} src={product.imgUrl} alt="" />
         <div className={'price'}>
             <span>{product.price} ₽</span>
         </div>
