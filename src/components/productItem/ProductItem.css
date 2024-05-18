@@ -12,10 +12,8 @@
 .img
 {
     width: 100%;
-    background: lightgray;
     height: 270px;
     margin: 0 auto;
-    background: var(--tg-theme-button-color);
     background: #343434;
     border-radius: 15px;
 }
@@ -26,22 +24,19 @@
     margin-top: 10px;
     font-size: 1em;
     font-weight: 700;
-    color: var(--tg-theme-button-text-color);
-    color: #4b75ff;
+    color: #5288C1;
 }
 
 .title
 {
     color: var(--tg-theme-button-text-color);
-    color: black;
 }
 
 
 .description
 {
     font-size: 0.8em;  
-    color: var(--tg-theme-button-text-color);
-    color: rgba(0, 0, 0, 0.432);
+    color: var(--tg-theme-button-text-color), 50%;
 }
 
 
@@ -70,14 +65,14 @@
 
 .__star_info
 {
-    color: black;
+    color: var(--tg-theme-button-text-color);
     font-size: 16px;
 }
 
 .__info_shops_item
 {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.432);  
+    color: var(--tg-theme-button-text-color), 50%;
 }
 
 .__info_shops_item > samp
