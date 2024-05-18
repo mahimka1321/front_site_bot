@@ -6,6 +6,9 @@
     align-items: center;
     padding: 0 20px;
     margin-top: 20px;
+    position: fixed; 
+    
+    margin-top: -35px;
 }
 
 .username 
