@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './ProductList.css'
 import ProductItem from '../productItem/ProductItem';
 import { useTelegram } from '../../hooks/useTelegram';
@@ -25,6 +25,28 @@ const ProductList = () => {
   const {tg} = useTelegram();
   const [btnText, setBntText] = useState('Добавить в корзину')
 
+  const onSendData = useCallback(()=> {
+    const data = {
+      products: addedItems,
+      getTotalPrice: getTotalPrice(addedItems)
+    }
+    fetch('http://localhost:8000', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+},[addedItems])
+
+useEffect(()=>{
+    tg.onEvent('mainButtonClicked', onSendData)
+
+    return () => {
+        tg.offEvent('mainButtonClicked', onSendData)
+    }
+},[tg, onSendData])
+
   const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.id === product.id);
     let newItems = [];
@@ -48,7 +70,9 @@ const ProductList = () => {
   }
 
   return (
-    <div className={'list'}>
+    <div className={'-container_product'}>
+      <div className={'container__otlad'}>
+      <div className={'list auto-fill'}>
       {products.map(item => (
         <ProductItem
           product={item}
@@ -58,6 +82,8 @@ const ProductList = () => {
           setBntText={setBntText}
           />
       ))}
+    </div>
+      </div>
     </div>
   );
 };

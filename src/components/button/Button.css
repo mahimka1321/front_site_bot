@@ -2,7 +2,9 @@
 {
     padding: 10px 15px;
     background-color: var(--tg-theme-button-color);
+    background: #4b75ff;
     color: var(--tg-theme-button-text-color);
+    color: #ffffff;
     font-weight: bold;
     border: none;
     border-radius: 10px;

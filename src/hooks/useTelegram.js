@@ -21,6 +21,7 @@ export function useTelegram() {
         onToggelButton,
         tg,
         user : tg.initDataUnsafe?.user,
+        queryId: tg.initDataUnsafe?.query_id,
 
     }
 }
