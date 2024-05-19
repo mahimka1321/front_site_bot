@@ -37,8 +37,8 @@
 .container__btn_
 {
 	display: grid;
-	grid-template-columns: repeat(6, 120px);
-	 grid-template-columns: repeat(auto-fill, 120px);
+	grid-template-columns: repeat(6, 115px);
+	 grid-template-columns: repeat(auto-fill, 115px);
 
 	grid-auto-rows: 30px;
 	grid-gap: 4px;
@@ -50,7 +50,7 @@
 .container__btn_ > button
 {
 	display: block;
-	width: 120px;
+	width: 115px;
 	height: 30px;
 	border-radius: 8px;
 
