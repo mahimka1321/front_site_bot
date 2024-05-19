@@ -80,6 +80,12 @@ useEffect(()=>{
   return (
     <div className={'-container_product'}>
       <div className={'container__otlad'}>
+        <div className={'container__btn_'}>
+          <button>Новые</button>
+          <button>Романтика</button>
+          <button>Наука</button>
+          <button>Детектив</button>
+        </div>
       <div className={'list auto-fill'}>
       {products.map(item => (
         <ProductItem
