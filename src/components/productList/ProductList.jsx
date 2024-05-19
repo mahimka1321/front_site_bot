@@ -23,7 +23,7 @@ const ProductList = () => {
 
   const [addedItems, setAddedItems] = useState([]);
   const {tg} = useTelegram();
-  const [btnText, setBntText] = useState('Добавить в корзину')
+  const [btnText, setBntText] = useState('Скачать')
 
   const onSendData = useCallback(()=> {
     const data = {

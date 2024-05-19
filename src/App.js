@@ -9,9 +9,13 @@ import './App.css';
 import ProductList from './components/productList/ProductList';
 import Form from './components/form/Form';
 
+
+
 function App() {
 
   const {tg} = useTelegram();
+
+
 
   useEffect( () => {
     tg.ready();
