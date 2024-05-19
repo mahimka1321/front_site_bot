@@ -9,8 +9,16 @@ const products = [
   {id: '3', imgUrl:'https://a.radikalfoto.host/2024/05/18/tKeV70UFl-0.jpeg', title: 'Загадочная история', price: 5299, description: ''},
   {id: '4', imgUrl:'https://a.radikalfoto.host/2024/05/18/HXbXPg7iZqw.jpeg', title: 'Подарю тебе любовь', price: 4999, description: ''},
   {id: '5', imgUrl:'https://a.radikalfoto.host/2024/05/18/bJU4LHsnp30.jpeg', title: 'Невероятная история', price: 2499, description: ''},
-  {id: '6', imgUrl:'https://a.radikalfoto.host/2024/05/18/ZpxP68tc5OE.jpeg', title: 'Романтическое назв...', price: 5299, description: ''}
-
+  {id: '6', imgUrl:'https://a.radikalfoto.host/2024/05/18/ZpxP68tc5OE.jpeg', title: 'Романтическое назв...', price: 5299, description: ''},
+  {id: '7', imgUrl:'https://a.radikalfoto.host/2024/05/18/vI2fJxnCKAY.jpeg', title: 'Романтичная история', price: 4999, description: ''},
+  {id: '8', imgUrl:'https://a.radikalfoto.host/2024/05/18/iEW-UaXAOEY.jpeg', title: 'Дринцесса для...', price: 2499, description: 'Книга...'},
+  {id: '9', imgUrl:'https://a.radikalfoto.host/2024/05/18/tKeV70UFl-0.jpeg', title: 'Загадочная история', price: 5299, description: ''},
+  {id: '10', imgUrl:'https://a.radikalfoto.host/2024/05/18/HXbXPg7iZqw.jpeg', title: 'Подарю тебе любовь', price: 4999, description: ''},
+  {id: '11', imgUrl:'https://a.radikalfoto.host/2024/05/18/bJU4LHsnp30.jpeg', title: 'Невероятная история', price: 2499, description: ''},
+  {id: '12', imgUrl:'https://a.radikalfoto.host/2024/05/18/HXbXPg7iZqw.jpeg', title: 'Подарю тебе любовь', price: 4999, description: ''},
+  {id: '13', imgUrl:'https://a.radikalfoto.host/2024/05/18/bJU4LHsnp30.jpeg', title: 'Невероятная история', price: 2499, description: ''},
+  {id: '14', imgUrl:'https://a.radikalfoto.host/2024/05/18/ZpxP68tc5OE.jpeg', title: 'Романтическое назв...', price: 5299, description: ''},
+  {id: '15', imgUrl:'https://a.radikalfoto.host/2024/05/18/ZpxP68tc5OE.jpeg', title: 'Романтическое назв...', price: 5299, description: ''}
 ]
 
 const getTotalPrice = (items = []) => {
